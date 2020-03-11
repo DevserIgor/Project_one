@@ -24,12 +24,20 @@ class List {
 }
 
 class Todolist extends List{
+    constructor(){
+        //chama o construtor da classe pai
+        super();
+        //definindo as propriedades desta
+        this.usuario = "Igor";
+    }
 
+    mostraUduario(){
+        console.log(this.usuario);
+    }
 }
-
-
 const MinhaLista = new Todolist()
 
 document.getElementById('newTodo').onclick = function() {
     MinhaLista.add('Novo Todo');
 }
+

@@ -52,10 +52,23 @@ var Todolist = /*#__PURE__*/function (_List) {
   _inherits(Todolist, _List);
 
   function Todolist() {
+    var _this;
+
     _classCallCheck(this, Todolist);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Todolist).apply(this, arguments));
+    //chama o construtor da classe pai
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Todolist).call(this)); //definindo as propriedades desta
+
+    _this.usuario = "Igor";
+    return _this;
   }
+
+  _createClass(Todolist, [{
+    key: "mostraUduario",
+    value: function mostraUduario() {
+      console.log(this.usuario);
+    }
+  }]);
 
   return Todolist;
 }(List);
