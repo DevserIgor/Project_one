@@ -1,0 +1,5 @@
+{
+    //babel e responsavel por traduzir versoes mais antigas do que ES6
+    //o preset 'env' responsavel por identificar o ambiente , ex: browser e traduzir para ele
+    "presets": ["@babel/preset-env"]
+}
